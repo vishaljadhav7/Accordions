@@ -16,3 +16,15 @@ accordionItems.forEach(item => {
 
   });
 });
+
+
+
+// // JavaScript for event delegation
+// document.getElementById('accordion').addEventListener('click', function(event) {
+//   // Check if the clicked element is an accordion title
+//   if (event.target.classList.contains('accordion-title')) {
+//     // Toggle the 'active' class on the content element
+//     var content = event.target.nextElementSibling;
+//     content.classList.toggle('active');
+//   }
+// });
