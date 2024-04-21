@@ -1,57 +1,33 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
 }
 
-.accordion{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
-  
-  .accordion-item {
-    margin-bottom: 10px;
-  }
+.container{
+  width:300px ;
+  height: auto;
+  border: 2px solid black;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  h1{
-    text-align: center;
-    margin-top: 7%;
-    color: rgb(102, 127, 238);
-    opacity: 0.5;
-  }
-  
-  .accordion-title {
-    color: #fff;
-    background-color: pink;
-    cursor: pointer;
-    padding: 10px;
-    transition: background-color 1s;
-    border-radius: 10px;
-  }
-  
-  .accordion-title:hover {
-    background-color: rgb(61, 131, 179);
-  }
-  
-  .accordion-content {
-    background: rgb(253, 253, 253);
-    display: none;
-    padding: 10px;
-  }
-  
+.accordion-title{
+  background: green;
+  color: white;
+  display: block;
+  padding: 2px;
+}
+
+.accordion-content{
+  padding: 2px;
+  color: white;
+  display: none;
+}
+
 .accordion-item.active .accordion-content{
-        display: block;
+  display: block;
 }
 
-
-
-// .accordion-content {
-//   display: none;
-// }
-// .accordion-content.active {
-//   display: block;
-// }
